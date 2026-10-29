@@ -40,6 +40,7 @@ Requires .NET 8.0 SDK. Third-party binaries (`DLSS\` and `ДОПОЛНЕНИЕ\`
 ```powershell
 dotnet build CHZMFRAMEUNLOCK1.csproj -c Release
 dotnet publish CHZMFRAMEUNLOCK1.csproj -c Release
+```
 
 ---
 
