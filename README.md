@@ -45,7 +45,7 @@ dotnet publish CHZMFRAMEUNLOCK1.csproj -c Release
 ---
 
 <details>
-<summary><b>CREDITS // ИСПОЛЬЗОВАННЫЕ НАРАБОТКИ</b></summary>
+<summary><b>CREDITS // </b></summary>
 
 * **SM86 DLSS MFG & INT8 SR:** [sdli1995/dlssg_for_sm86](https://github.com/sdli1995/dlssg_for_sm86), [SilyNoMeta/rtx-encore](https://github.com/SilyNoMeta/rtx-encore), [SilyNoMeta/dlssg_for_sm86](https://github.com/SilyNoMeta/dlssg_for_sm86), [pipotoufikxyz-lgtm/dlssg_for_sm86-MFG-version](https://github.com/pipotoufikxyz-lgtm/dlssg_for_sm86-MFG-version)
 * **NVIDIA Smooth Motion (RTX 30):** [ItsAdeline/NVSmooth30](https://github.com/ItsAdeline/NVSmooth30), [xikarioz/Smooth-Motion-RTX30](https://github.com/xikarioz/Smooth-Motion-RTX30)
