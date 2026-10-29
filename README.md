@@ -32,6 +32,22 @@
 2. Run `CHZM FRAME UNLOCK.exe` as Administrator.
 3. Select a game, pick a mode, and launch.
 
+---
+
+<details>
+<summary><sub><b>CREDITS // ИСПОЛЬЗОВАННЫЕ НАРАБОТКИ (click to expand)</b></sub></summary>
+<br>
+
+<sub>
+
+* **SM86 DLSS MFG & INT8 SR:** [sdli1995/dlssg_for_sm86](https://github.com/sdli1995/dlssg_for_sm86), [SilyNoMeta/rtx-encore](https://github.com/SilyNoMeta/rtx-encore), [SilyNoMeta/dlssg_for_sm86](https://github.com/SilyNoMeta/dlssg_for_sm86), [pipotoufikxyz-lgtm/dlssg_for_sm86-MFG-version](https://github.com/pipotoufikxyz-lgtm/dlssg_for_sm86-MFG-version)
+* **NVIDIA Smooth Motion (RTX 30):** [ItsAdeline/NVSmooth30](https://github.com/ItsAdeline/NVSmooth30), [xikarioz/Smooth-Motion-RTX30](https://github.com/xikarioz/Smooth-Motion-RTX30)
+* **LIVE FLOW (DXGI + Optical Flow):** [NODIX-TECH/DLSS-5-MANAGER](https://github.com/NODIX-TECH/DLSS-5-MANAGER), [NODIX-TECH/MFG-SUPER-MOTION](https://github.com/NODIX-TECH/MFG-SUPER-MOTION)
+* **Engine Detection & Proxy Rotation:** [cdozdil/OptiScaler](https://github.com/cdozdil/OptiScaler), [ShyVortex/dlss-unlocked](https://github.com/ShyVortex/dlss-unlocked), [Optiscaler-Client](https://github.com/Optiscaler-Client/Optiscaler-Client)
+
+</sub>
+</details>
+
 ### Build from Source
 Requires .NET 8.0 SDK. Third-party binaries (`DLSS\` and `ДОПОЛНЕНИЕ\`) are not included in Git — see [`docs/PACKAGES.md`](docs/PACKAGES.md).
 ```powershell
