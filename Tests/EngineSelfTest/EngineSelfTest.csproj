@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>EngineSelfTest</AssemblyName>
+    <RootNamespace>EngineSelfTest</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <UseWindowsForms>true</UseWindowsForms>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <!-- Компилируем сам сервис, а не ссылаемся на WPF-EXE: тест остаётся консольным. -->
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="..\..\Services\TensorAutoService.cs" Link="TensorAutoService.cs" />
+    <Compile Include="..\..\Services\TensorAutoService.Engines.cs" Link="TensorAutoService.Engines.cs" />
+    <Compile Include="..\..\Services\TensorAutoService.AutoPilot.cs" Link="TensorAutoService.AutoPilot.cs" />
+    <Compile Include="..\..\Services\LiveFlowBridge.cs" Link="LiveFlowBridge.cs" />
+    <Compile Include="..\..\Services\MenuHotkey.cs" Link="MenuHotkey.cs" />
+    <Compile Include="..\..\Services\GameLibraryScanner.cs" Link="GameLibraryScanner.cs" />
+  </ItemGroup>
+
+</Project>

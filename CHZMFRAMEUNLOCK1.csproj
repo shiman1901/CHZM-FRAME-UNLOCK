@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>CHZMFRAMEUNLOCK1</AssemblyName>
+    <RootNamespace>CHZMFRAMEUNLOCK1</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <DebugType>none</DebugType>
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+    <Version>1.0.0</Version>
+    <Authors>CHZM</Authors>
+    <Product>CHZM Frame Unlock</Product>
+    <AssemblyTitle>CHZM Frame Unlock</AssemblyTitle>
+  </PropertyGroup>
+
+  <!-- Автотест живёт в Tests\ и не должен попадать в сборку приложения -->
+  <ItemGroup>
+    <Compile Remove="Tests\**" />
+    <Page Remove="Tests\**" />
+    <None Remove="Tests\**" />
+    <Compile Remove="tools\**" />
+    <Page Remove="tools\**" />
+    <None Remove="tools\**" />
+    <None Remove="app.ico" />
+    <Resource Include="app.ico" />
+  </ItemGroup>
+
+  <!-- Портативный EXE всегда рядом с проектом -->
+  <Target Name="CopyExeToProjectRoot" AfterTargets="Publish">
+    <ItemGroup>
+      <_RootExeSource Include="$(PublishDir)CHZMFRAMEUNLOCK1.exe" Condition="Exists('$(PublishDir)CHZMFRAMEUNLOCK1.exe')" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_RootExeSource)" DestinationFolder="$(MSBuildProjectDirectory)" SkipUnchangedFiles="true" ContinueOnError="true" />
+    <Message Importance="high" Text="EXE: $(MSBuildProjectDirectory)\CHZMFRAMEUNLOCK1.exe" />
+  </Target>
+
+</Project>

@@ -1,0 +1,31 @@
+# Build output
+dist/
+bin/
+obj/
+.build/
+**/bin/
+**/obj/
+*.pdb
+*.user
+*.suo
+.vs/
+
+# Runtime binaries and packages (third-party)
+DLSS/
+ДОПОЛНЕНИЕ/
+*.exe
+*.dll
+*.asi
+
+# Local settings and scan results
+chzm-settings.json
+game-library.json
+chzm-error.log
+*.log
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.idea/
+.vscode/
